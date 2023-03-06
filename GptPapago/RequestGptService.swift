@@ -20,7 +20,7 @@ struct RequestGptService {
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         request.allHTTPHeaderFields = [
-            "Authorization" : "Bearer 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"
+            "Authorization" : UTILS.Gpt_token
         ]
         //request.httpBody = "source=ko&target=en&text=만나서 반갑습니다.".data(using: .utf8)
         
