@@ -20,8 +20,8 @@ struct RequestMailService {
         request.httpMethod = "POST"
         request.setValue("application/x-www-form-urlencoded; charset=UTF-8", forHTTPHeaderField: "Content-Type")
         request.allHTTPHeaderFields = [
-            "X-Naver-Client-Id" : "8jeHk0Dj1YevFPqSHLrM",
-            "X-Naver-Client-Secret" : "mXvG5nkb5a"
+            "X-Naver-Client-Id" : UTILS.naver-client-id,
+            "X-Naver-Client-Secret" : UTILS.naver-client-secret
         ]
         
         request.httpBody = ("source=ko&target=en&text="+email).data(using: .utf8)
